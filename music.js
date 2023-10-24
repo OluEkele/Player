@@ -25,8 +25,8 @@ window.addEventListener("load", () =>{
 function loadMusic(indexNumb){
     musicName.innerText = allMusic[indexNumb - 1].name;
     musicArtist.innerText = allMusic[indexNumb - 1].artist;
-    musicImg.src = `/image/${allMusic[indexNumb - 1].img}.jpg`;
-    mainAudio.src = `/music-file/${allMusic[indexNumb -1].src}`;
+    musicImg.src = `image/${allMusic[indexNumb - 1].img}.jpg`;
+    mainAudio.src = `music-file/${allMusic[indexNumb -1].src}`;
 }
 
 //play music function
@@ -233,7 +233,7 @@ for(let i = 0; i < allMusic.length; i++) {
                     <span>${allMusic[i].name}</span> 
                     <p>${allMusic[i].artist}</p>
                 </div>
-                <audio class="${allMusic[i].src}" src="/music-file/${allMusic[i].src
+                <audio class="${allMusic[i].src}" src="music-file/${allMusic[i].src
                 }"></audio>
                 <span id="${allMusic[i].src}"  class="audio-duration">3:40</span>
             </li>`;
